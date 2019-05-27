@@ -20,6 +20,7 @@ function generate() {
         wrap.appendChild(NewLine);
         var newButton = document.createElement('span');
         newButton.className = 'button';
+        newButton.innerHTML = keys;
         NewLine.appendChild(newButton);
         generate();
 }
