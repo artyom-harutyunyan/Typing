@@ -6,8 +6,9 @@ body {
     margin: 0;
 }
 .section {
-    padding: 20px 100px;
+    padding: 40px 100px;
     height: 100vh;
+    max-height: 101vh;
     background-image: linear-gradient(to right top, #edd254, #c5e486, #b1edb9, #baf0df, #ddeeee);
 }
 .container {
@@ -15,6 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     opacity: .5;
     padding: 100px 200px;
@@ -31,7 +33,7 @@ body {
     background: rgb(137, 236, 243);
     margin: 20px 0px;
     padding: 40px 0px;
-    transition: 2.2s ease-in-out;
+    transition: .8s ease-in-out;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -83,5 +85,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+.section_items {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.adds {
+    display: block;
+    padding: 5px 10px;
+    font-size: 30px;
+    color: rgb(12, 12, 12);
 }
