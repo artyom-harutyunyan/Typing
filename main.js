@@ -12,6 +12,7 @@ function generate_random_letter(e){
 }
 function generate() {
     // var random = Math.round(Math.random() * 100);
+    // wrap.innerHTML = '';
     var x = generate_random_letter(1);
     let random_string = '';
 
@@ -24,13 +25,19 @@ function generate() {
     newButton.innerHTML = random_string += String.fromCharCode(x);
     newLine.appendChild(newButton);
 
-    // offStartButton.style.display = 'none';
-    console.log(x);
+    offStartButton.style.display = 'none';
+    // console.log(x);
   
     document.onkeypress = function presset(event) {
         if(event.keyCode == x) {
-            alert('ok')
-        }else alert('no')
+            newLine.className += ' line_up';
+            newButton.className += ' correct_button';
+            generate();
+            // alert('ok')
+        }else {
+            newButton.className += ' wrong_button';
+            // alert('no')
+        }
     }
 } 
 
